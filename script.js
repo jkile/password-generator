@@ -12,3 +12,20 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+function randomLetter(){
+
+  let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+  numberChoice = Math.floor(Math.random() * 26);
+
+  return alphabet[numberChoice];
+
+}
+
+function randomNumber(){
+
+  let number = Math.floor(Math.random() * 10);
+  return number;
+
+}
